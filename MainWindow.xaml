@@ -1,0 +1,17 @@
+﻿<Window x:Class="Window_10_Migration_Tools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windows_10_Migration_Tools"
+        mc:Ignorable="d" Name="MainWin"
+        Title="Window 10 Migration Tools" Height="350" Width="525" ResizeMode="NoResize" Closing="DataWindow_Closing" IsHitTestVisible="True">
+
+    <Grid>
+        <Button Name="browseBackup" IsEnabled="True" Content="Windows 7 Back Up" Margin="15,44,15,0" Height="100" VerticalAlignment="Top" Click="win7_backup"/>
+        <Button Name="restoreBtn"  IsEnabled="True" Content="Windows 10 Restore" Margin="15,0,15,37" Height="100" VerticalAlignment="Bottom" Click="win10_restore"/>
+        <Label x:Name="label" Content="           Version 1.0.0.0" HorizontalAlignment="Left" Margin="374,12,0,0" VerticalAlignment="Top" Height="32" Width="130"/>
+        <TextBox x:Name="wait_msg" HorizontalAlignment="Left" Height="100" Margin="124,116,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;&#xD;&#xA;          Please wait until the process is complete&#xD;&#xA; (Will have summary show out when process is done) " VerticalAlignment="Top" Width="294" BorderThickness="5" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
